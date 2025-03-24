@@ -19,6 +19,9 @@ BuildRequires:	python3 >= 1:3.8
 BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# don't work with static libraries
+%undefine	_debugsource_packages
+
 %description
 This subproject was created to share code across various Vulkan
 repositories, solving long standing issues for Vulkan SDK developers
