@@ -1,4 +1,4 @@
-%define	api_version	1.4.309.0
+%define	api_version	1.4.321.0
 %define	gitref		vulkan-sdk-%{api_version}
 
 Summary:	Vulkan Utility Libraries
@@ -10,7 +10,7 @@ License:	Apache v2.0
 Group:		Development/Libraries
 #Source0Download: https://github.com/KhronosGroup/Vulkan-Utility-Libraries/releases
 Source0:	https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/%{gitref}/%{name}-%{gitref}.tar.gz
-# Source0-md5:	39650f99048e010f80dc07c3478b3415
+# Source0-md5:	ee723bd8996706a231bdacac2c7551e1
 URL:		https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 BuildRequires:	Vulkan-Headers >= %{api_version}
 BuildRequires:	cmake >= 3.22.1
